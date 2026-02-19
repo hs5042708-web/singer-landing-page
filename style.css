@@ -1,3 +1,4 @@
+/* Fonts and Global Variables  */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&family=Poppins:wght@300;600&display=swap');
 
 :root {
@@ -22,7 +23,15 @@ body {
     overflow-x: hidden;
 }
 
+/* Desktop links hide  */
+.mobile-menu, 
+.mobile-links,
+.mobile-nav,
+.nav-overlay {
+    display: none !important;
+}
 
+/* Navigation Bar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -59,19 +68,16 @@ body {
     text-shadow: 0 0 10px var(--neon-blue);
 }
 
-
+/* Hero Section  */
 .hero {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-size: cover;
-    background-position: center;
     position: relative;
     margin-top: 100px;
 }
-
 
 .hero::before {
     content: '';
@@ -100,7 +106,6 @@ body {
     margin-bottom: 50px;
 }
 
-
 .btn {
     padding: 18px 45px;
     background: transparent;
@@ -121,9 +126,8 @@ body {
     box-shadow: 0 0 30px var(--neon-purple), 0 0 60px var(--neon-purple);
 }
 
-
+/*  About & Services */
 .about-section { padding: 140px 10%; }
-
 .about-container { display: flex; align-items: center; gap: 80px; }
 
 .about-image img {
@@ -141,15 +145,8 @@ body {
     margin-bottom: 25px;
     text-shadow: 0 0 10px var(--neon-purple);
 }
-.about-image img {
-    width: 100%;
-    max-width: 450px; 
-    height: auto;
-    border-radius: 10px;
-}
 
 #services { padding: 140px 10%; background: #080808; }
-
 .services-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -170,9 +167,8 @@ body {
     box-shadow: 0 10px 30px rgba(36, 209, 255, 0.2);
 }
 
-
+/* Contact Section */
 #contact { padding: 140px 10%; text-align: center; }
-
 .contact-box input, .contact-box textarea {
     width: 100%;
     padding: 15px;
@@ -188,51 +184,17 @@ body {
     border-color: var(--neon-blue);
     box-shadow: 0 0 10px var(--neon-blue);
 }
+
+/*  Mobile Responsiveness */
 @media (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
+    .navbar { padding: 15px 5%; display: flex; }
+    .nav-links { display: none; }
+    .hero-content h1 { font-size: 3rem; line-height: 1.1; }
+    .hero-content p { font-size: 1rem; letter-spacing: 3px; }
+    .about-section { padding: 80px 5%; }
+    .about-container { flex-direction: column; gap: 40px; text-align: center; }
+    .about-image img { max-width: 100%; }
+    #services { padding: 80px 5%; }
+    .services-container { grid-template-columns: 1fr; }
+    #contact { padding: 80px 5%; }
 }
-
-.contact-box :is(input, textarea):focus {
-    border: 1px solid #24d1ff; 
-    box-shadow: 0 0 12px rgba(36, 209, 255, 0.7);
-    outline: none;
-    resize: none; 
-}
-
-.mobile-menu-btn, 
-.menu-btn {
-    display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
-    pointer-events: none !important;
-}
-
-
-.nav-overlay, 
-.menu-overlay {
-    display: none !important;
-}
-
-
-
-@media (max-width: 768px) {
-    .navbar {
-        display: none; /
-    }
-}
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
