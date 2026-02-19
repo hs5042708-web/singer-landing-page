@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carol Andryas - Singer Portfolio</title>
+    <meta name="description" content="Carol Andryas - Professional Singer Portfolio. Live shows, studio recording and songwriting services.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    
+   <nav class="navbar">
+    <div class="logo">MELODY</div>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="nav-overlay" id="mobileMenu">
+    <span class="close-btn" onclick="toggleMenu()">&times;</span>
+    <ul class="mobile-links">
+        <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu()">About Me</a></li>
+        <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    </ul>
+</div>
+    
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Carol Andryas</h1>
+            <p>Capturing Hearts Through Music</p>
+            <button class="btn">Listen Now</button>
+        </div>
+    </section>
+
+    
+    <section id="about" class="about-section">
+  <div class="about-container">
+    <div class="about-image">
+      <img src="https://media.istockphoto.com/id/1301020618/photo/microphone-on-stage-against-a-background-of-auditorium.jpg?s=612x612&w=0&k=20&c=0RJdJFdFczywFi8mZ2VB3AnESGSwZKbeeVDpT8AYJjQ=" alt="Singer performing on stage">
+    </div>
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        A dedicated singer and songwriter on a mission to express the unspoken through music.
+        I specialize in creating original melodies and performing on diverse stages,
+        bringing a unique emotional touch to every piece I create.
+      </p>
+      <p>
+        My goal is to bring peace to people’s hearts through my music.
+        Music is an art that I continue learning every day.
+      </p>
+      <button class="btn">Read More</button>
+    </div>
+  </div>
+</section>
+
+
+   
+    <section id="services">
+        <h2 class="section-title">My Services</h2>
+        <div class="services-container">
+            <div class="card">
+                <h3>Live Shows</h3>
+                <p>Weddings, Concerts & Events.</p>
+            </div>
+            <div class="card">
+                <h3>Studio Recording</h3>
+                <p>Professional Vocals & Playback.</p>
+            </div>
+            <div class="card">
+                <h3>Song Writing</h3>
+                <p>Custom Lyrics & Composition.</p>
+            </div>
+        </div>
+    </section>
+
+   
+    <section id="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-box">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button class="btn">Send Message</button>
+        </div>
+    </section>
+
+</body>
+</html>
