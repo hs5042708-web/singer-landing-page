@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 🎤 Carol Andryas — Singer Portfolio
 Developed by: [Haleema Sadia]
 Project Classification: Task-Based Assignment
